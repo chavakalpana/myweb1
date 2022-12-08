@@ -16,6 +16,14 @@
 
 	</properties>
 	<dependencies>
+		
+      <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.0.0</version>
+      </plugin>
+      </plugins>
 
 		
 		<dependency>
@@ -27,13 +35,6 @@
 
 	</dependencies>
 	
-	<plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>3.0.0</version>
-      </plugin>
-      </plugins>
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
