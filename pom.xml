@@ -47,8 +47,7 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>3.0.0</version>
-	   </plugin>
-        </plugins>
+	   
 	<pluginRepositories>
 	    <pluginRepository>    
 		<id>maven1</id>
@@ -56,6 +55,8 @@
 		<url>http://repo1.maven.org/maven2</url>
 	    </pluginRepository>
 	</pluginRepositories>
+	       </plugin>
+        </plugins>
          
 	</build>	
 </project>
