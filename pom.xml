@@ -42,12 +42,12 @@
          <distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://13.127.39.127:8081/repository/sample-snapshots/</url>
+		    <url>http://13.127.39.127:8081/repository/sunilmaven-snapshort/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://13.127.39.127:8081/repository/sample-releases/</url>
+		    <url>http://13.127.39.127:8081/repository/sunilmaven-release/</url>
 		</repository>
   	</distributionManagement>
 		
