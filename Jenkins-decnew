@@ -10,9 +10,10 @@ pipeline{
                 git credentialsId: 'gitjenkins', url: 'https://github.com/chavakalpana/myweb1.git'
             }
         }
-        stage("Maven Clean Package"){
-        def mavenHome = tool name: "Maven",type: "maven"
-        sh "${mavenHome}/bin/mvn clean package"
+       stage("Maven Build"){
+            steps{
+                sh "mvn clean package"
+                sh "mv target/*.war target/myweb1.war"
        }
         
         stage("deploy-dev"){
