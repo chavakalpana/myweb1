@@ -8,28 +8,28 @@ pipeline{
 					stage('Build') 
 					{
 					steps{
-					sh "cd /var/lib/jenkins/workspace/pipeline \n /opt/maven/bin/mvn clean"
+					sh "cd /var/lib/jenkins/workspace/sampleproject \n /opt/maven/bin/mvn clean"
 					sh "mvn clean"
 					}
 					}
 					stage('Test') 
 					{
 					steps{
-					sh "cd /var/lib/jenkins/workspace/pipeline \n /opt/maven/bin/mvn clean"
+					sh "cd /var/lib/jenkins/workspace/sampleproject \n /opt/maven/bin/mvn clean"
 					sh "mvn test"
 					}
 					}
 					stage('Compile') 
 					{
 					steps{
-					sh "cd /var/lib/jenkins/workspace/pipeline \n /opt/maven/bin/mvn clean"
+					sh "cd /var/lib/jenkins/workspace/sampleproject \n /opt/maven/bin/mvn clean"
 					sh "mvn compile"
 					}
 					}
 					stage('package') 
 					{
 					steps{
-					sh "cd /var/lib/jenkins/workspace/pipeline \n /opt/maven/bin/mvn clean"
+					sh "cd /var/lib/jenkins/workspace/sampleproject \n /opt/maven/bin/mvn clean"
 					sh "mvn package"
 					}
                                         }
