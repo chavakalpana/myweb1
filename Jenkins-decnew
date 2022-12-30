@@ -12,8 +12,8 @@ pipeline{
         }
         stage("mvn clean package"){
        steps{
-					sh "cd /var/lib/jenkins/workspace/sampleproject \n /opt/maven/bin/mvn clean"
-					sh "cd /opt/maven/bin/mvn package"
+					sh "cd /var/lib/jenkins/workspace/sampleproject \n /opt/maven/bin/mvn clean package"
+					
 					}
         }
         stage("deploy-dev"){
