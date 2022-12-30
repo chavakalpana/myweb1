@@ -12,7 +12,7 @@ pipeline{
         }
         stage("mvn clean package"){
        steps{
-					sh "cd /var/lib/jenkins/workspace/pipeline \n /opt/maven/bin/mvn clean"
+					sh "cd /var/lib/jenkins/workspace/sampleproject \n /opt/maven/bin/mvn clean"
 					sh "mvn package"
 					}
         }
